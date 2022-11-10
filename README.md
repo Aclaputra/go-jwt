@@ -1,2 +1,2 @@
 # golang-jwt
-Practive golang-jwt
+Practive go-jwt
