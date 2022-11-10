@@ -10,14 +10,14 @@ import (
 )
 
 // SetupDatabaseConnection is creating a new connection to our database
-func SetupdatabaseConnection() *gorm.DB {
+func SetupDatabaseConnection() *gorm.DB {
   errEnv := godotenv.Load()
   if errEnv != nil {
     panic("Failed to load env file")
   }
 
   dbUser := os.Getenv("DB_USER")
-  dbPass := os.Getenv("DB_PASS")
+  dbPass := os.Getenv("DB_PASSWORD")
   dbHost := os.Getenv("DB_HOST")
   dbName := os.Getenv("DB_NAME")
 
@@ -39,5 +39,5 @@ func CloseDatabaseConnection(db *gorm.DB) {
   if err != nil {
     panic("Failed to close connection from database")
   }
-  dbSQL.close()
+  dbSQL.Close()
 }
