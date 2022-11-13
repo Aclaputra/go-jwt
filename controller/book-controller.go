@@ -10,7 +10,7 @@ import (
 	"github.com/Aclaputra/golang-jwt/dto"
 	"github.com/Aclaputra/golang-jwt/entity"
 	"github.com/Aclaputra/golang-jwt/helper"
-	"github.com/Aclaputra/golan-jwt/service"
+	"github.com/Aclaputra/golang-jwt/service"
 )
 
 //BookController is a ...
